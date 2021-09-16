@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            padding: 0%;
+            margin: 0%;
+            background-image: url('https://wallpaperaccess.com/full/1078023.jpg');
+        }
+        .left {
+            color: white;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 34px;
+        }
+        .left img {
+            width: 150px;
+        }
+        .left div {
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            color: darkgray;
+            line-height: 0px;      
+        }
+        .mid {
+            color: white;
+            display: block;
+            font-size: 25px;
+            margin: 45px auto;
+            width: 40%;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .right {
+            color: white;
+            display: inline-block;
+
+            position: absolute;
+            top: 20px;
+            right: 34px;
+        }
+        .navbar {
+            display: inline;
+        }
+        .navbar li {
+            color: black;
+            display: inline-block;
+            padding: 8px;
+            font-size: large;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .navbar li:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        .navbar li a {
+            color: black;
+        }
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: gray;
+            margin-top: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        .FORM_1 
+        {
+           margin-right: auto;
+           border: 10px white;
+           color: grey;         
+        }
+        .FORM_1 :hover{
+            border: 10px white;
+            color: red;
+            text-decoration: underline;
+        }
+        .FORM_1 h1{
+            color:4px grey;
+            margin-right: 4px;
+        }
+        .FORM_1 h1:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        #submission:hover{           
+            color: red;
+            text-decoration: underline;
+            background-color: gray;
+        }
+        .FORM_1{
+           background-color:rgba(25,30,35,40);
+            right: 35px;
+            position: absolute;
+            padding: 20px;
+            border: 10px white;
+            padding-top: 15px;       
+            border: 2px red;               
+        }
+        .FORM_1 label{
+            width: 40%;         
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://www.logoground.com/uploads/201744362017-02-133477310GYM3-01.jpg" alt="">
+            <div>Fitness Gym</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"></a>HOME</li>
+                <li><a href="#"></a>GYM CALCULATOR</li>
+                <li><a href="#"></a>ABOUT US</li>
+                <li><a href="#"></a>CONTACT US</li>
+            </ul>
+        </div>
+      <div class="right">
+            <button class="btn">CALL US </button>
+            <button class="btn">EMAIL US</button>
+
+        </div>
+    </header>
+         <form action="backend.javascript">
+        <div class="FORM_1">
+            <h1>Join The GYM Now</h1>
+            <div>
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" name="Myname">
+            </div>
+            <br>
+            <div>
+                <label for="email">EMAIL</label><br>
+                <input type="email" id="email" name="Myemail">
+            </div>
+            <br>
+            <div>
+                <label for="contact">CONTACT</label><br>
+                <input type="text" id="contact" name="Mycontact">
+            </div>
+            <br>
+            <div>
+                <label for="address">ADDRESS</label><br>
+                <input type="text" id="address" name="Myaddress">
+            </div>
+            <br>
+            <div>
+                <label for="gender">GENDER</label><br>
+                Male<input type="radio" id="gender" name="Mygender"> FeMale<input type="radio" name="Mygender">
+            </div>
+            <br>
+            <div>
+                <label for="date">JOINING DATE</label><br>
+                <input type="date" id="date" name="Mydatetime">
+            </div>
+            <br>
+            <div>
+                <label for="shift">SHIFT</label><br>
+                Morning<input type="radio" id="shift" name="Mygender"> Evening<input type="radio" name="Mygender">
+            </div>
+            <br>
+            <div>
+                <label for="submission"></label><br>
+                <input type="submit" name="SubmitNow" id="submission"><input type="reset" id="submission"
+                    name="ResetNow">
+            </div>
+        </div>
+        <br>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
